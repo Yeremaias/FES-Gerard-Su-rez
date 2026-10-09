@@ -1,0 +1,48 @@
+# Exercicis types
+# Exercici 1
+# Imprimeix el tipus del número 25
+print(type(25))
+
+# Exercici 2
+# Imprimeix el tipus del text "Hola món"
+print(type("Hola món"))
+
+# Exercici 3
+# Imprimeix el tipus del resultat de la comparació 10 > 5
+print(type(10 > 5))
+
+
+# Exercicis cast
+# Exercici 1
+# Demana a l'usuari quants paquets ha rebut un encaminador. Converteix el valor
+# introduït a un nombre enter, suma-hi 1200 paquets i mostra el total.
+paquets_rebuts = int(input("quants paquets ha rebut l'encaminador?"))
+paquets = paquets_rebuts + 1200
+print(f"total de paquets: {paquets}")
+# Exercici 2
+# Demana a l'usuari la velocitat d'una connexió en Mbps. Converteix el valor
+# introduït a un nombre decimal i calcula la velocitat equivalent en MB/s
+# dividint-la per 8. Mostra el resultat.
+velocitat = float(input("quina és la velocitat de la teva connexió(mbps):"))
+velocitat_eq = velocitat / 8
+print(f"velocitat en MB/s: {velocitat_eq}")
+
+# exercicis variables 
+# Exercici 1
+# Crea variables per desar el nom d'un encaminador, la seva ubicació,
+# el nombre de ports i si està encès. Mostra les dades en una frase
+# utilitzant una f-string.
+encaminador = "TP-Link"
+ubicacio = "sala de servidors"
+num_ports = 8
+esta_ences = True
+print(f"L'encaminador {encaminador} està ubicat a la {ubicacio}, té {num_ports} ports i està encès: {esta_ences}")
+# Exercici 2
+# Crea variables per desar els GB inclosos en un pla de dades mòbils
+# i els GB consumits. Calcula quants GB queden i mostra el resultat.
+# Després, actualitza el consum amb un valor nou i torna a calcular
+# quants GB queden.
+gb_inclosos = 10
+gb_consumits = 4
+gb_restants = gb_inclosos - gb_consumits
+print(f"GB restants: {gb_restants}")
